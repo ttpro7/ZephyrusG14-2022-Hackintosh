@@ -38,6 +38,10 @@ One GA402RJ, 16 GB RAM, 1 TB NVMe. This is what that install was doing, not a pr
 - 🔋 Battery status
 - 💾 Internal NVMe
 - 🧊 Hypervisor. Parallels runs on this install.
+- 🔆 Hardware Fn brightness keys
+- 📺 HDMI
+- 💳 SD card
+- 🪟 Windows boot from the picker
 
 ### ❌ Not working
 
@@ -46,8 +50,6 @@ One GA402RJ, 16 GB RAM, 1 TB NVMe. This is what that install was doing, not a pr
 ### ⚠️ Not retested
 
 - 😴 Sleep. The tested install has `pmset sleep 0`. Do not assume S3 works. Older notes used BIOS 312 and [Smokeless UMAF](https://github.com/DavidS95/Smokeless_UMAF) to enable S3. Flashing is at your own risk, and **GA402RJ is not GA402RK**.
-- 📺 HDMI, an inserted SD card, and Windows boot from the picker. A Windows partition is present and `ScanPolicy` is 0, but Windows was not booted for this update.
-- 🔆 Hardware Fn brightness keys. The brightness slider is active; Fn routing depends on ASUS Control, which is not in this repository.
 
 ---
 
@@ -102,8 +104,6 @@ amdbl=0 rhv_enable_svm=1 rhv_allow_users=1 rhv_hv=1 shda-lang=en
 | ECEnabler | 1.0.6 | embedded controller |
 | AsusBridge | 0.4.1 | companion for ASUS Control |
 | HoRNDIS | 9.2 | USB tethering |
-
-`itlwm` and `AirportItlwm` are not in this tree. Enable only the Wi-Fi kext that matches the card you actually have.
 
 ---
 
