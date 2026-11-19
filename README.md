@@ -37,12 +37,11 @@ One GA402RJ, 16 GB RAM, 1 TB NVMe. This is what that install was doing, not a pr
 - 📷 USB webcam
 - 🔋 Battery status
 - 💾 Internal NVMe
+- 🧊 Hypervisor. Parallels runs on this install.
 
 ### ❌ Not working
 
 - 🚫 Radeon 680M iGPU is disabled. Only the RX 6700S is used.
-- 🧊 `Hypervisor.framework` is unavailable (`kern.hv_support = 0`) even though `RyzenHV.kext` is loaded.
-- 📡 Intel Wi-Fi is not in this EFI. This is the Broadcom build. An AX210 needs a different kext set.
 
 ### ⚠️ Not retested
 
@@ -87,7 +86,7 @@ amdbl=0 rhv_enable_svm=1 rhv_allow_users=1 rhv_hv=1 shda-lang=en
 | GVAForce | 1.1.1 | media path assist |
 | ForgedInvariant | 1.5.0 | AMD kernel-patch companion |
 | AMDRyzenCPUPowerManagement | 0.7.2 | CPU power |
-| RyzenHV | 0.7.8 | SVM helper; hypervisor still unavailable |
+| RyzenHV | 0.7.8 | SVM helper; Parallels runs |
 | AMFIPass | 1.4.1 | AMFI |
 | RestrictEvents | 1.1.6 | board-id / update UI |
 | AppleMCEReporterDisabler | 1.2 | MCE panic workaround |
